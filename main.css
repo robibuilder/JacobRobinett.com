@@ -40,3 +40,17 @@ img {
 	min-height: 1200px;
 	min-width: 100%;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background: #000000;
+ border-top: 3px solid #000000;   
+}
+
+.i{
+    color: #4dd2ff;
+}
