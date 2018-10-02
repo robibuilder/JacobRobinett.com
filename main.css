@@ -1,10 +1,10 @@
-body1 { 
+body { 
     /*background: url("Images/Drone_Edit_2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
-    background-color: black;
+    background-color: #000000;
     background-size: 20% 100%;
     }
 
@@ -52,5 +52,11 @@ img {
 }
 
 .i{
+    padding-right: 20px;
     color: #4dd2ff;
+}
+
+.text-center{
+    text-align: center;
+    padding: 200px;
 }
