@@ -11,30 +11,7 @@ body {
 .spacing1 {
 	background-color: black;
     background-size: 20% 100%;
-}
-
-.backgroundTest {
-	background-image: url("Images/Drone_Edit_2.jpg");
-	background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 1200px;
-    min-height: 1200px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }	
-
-.backgroundTest2 {
-	background-image: url("Images/Test2.jpg");
-	/*background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 1200px;*/
-    min-height: 1200px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}		
 
 img {
 	min-height: 1200px;
@@ -50,23 +27,42 @@ img {
     color: #4dd2ff;
 }
 
-.text-center{
-    text-align: center;
+.topBody{
     padding: 250px;
 }
 
 .border-custom{
-    border-color: #4dd2ff !important; 
-    color: #4dd2ff !important;
+    border-color: #4dd2ff !important;
+    /* color: #4dd2ff !important; */
     border-width: 5px !important;
-}
+} 
 
 .footer {
-  position: absolute;
+  /* position: absolute; */ /* THIS LINE FUCKS WITH THE FOOTER */
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 40px;
   background: #000000;
  border-top: 3px solid #000000;   
+}
+
+/* ----- FONTS ----- */
+
+h1 {
+    font-size: 72px;
+    color: #4dd2ff !important
+}
+
+h2 {
+    font-size: 72px;
+    color: white;
+}
+
+h3 {
+    color: ;
+}
+
+.text1 {
+    color: white;
 }

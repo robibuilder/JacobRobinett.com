@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+.top {
+	width: 100%;
+}
+
+.img-grid{
+	/* border: 1px solid #ddd; */
+	border-radius: 4px;
+	padding: px;		/* this is the spacing on the grid */
+	width: 100%;		/* height is stock 100% */
+} 
+
+span:hover{
+	/*transform: scale(.9, .9);*/
+	opacity: .8;
+}
+
+nav{
+	/* background: rgb(200, 200, 200);
+	background: rgba(209, 209, 209, .5);
+	*/
+	background-color:rgba(255,0,0,0.4);
+}
+
+.header-custom{
+	/* background-image: url("images/CO.png"); */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	/* background-color: white; */
+}
+
+.img-header{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);	
+}
+
+.topnav_left
+{
+	float: right;
+}
+
+a:hover {
+	background-color: red;
+  	text-decoration: none;
+}
+</style>
+
+</head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- https://code.jquery.com/jquery-3.3.1.min.js -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+
+    
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!--
+	<div class="container" style="height: 100vh;">
+		<ul class="nav navbar-fixed-top">
+			<li class="nav-item">
+				<a class="nav-link" href="#one">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#two">Gallery Example</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#three">three</a>
+			</li>
+		</ul>
+
+		<div id="one" class="jumbotron-fluid text-center"> <!-- Change from jumbotron to "containter"/"container-fluid" for correct color -->
+				<!--<img class="" src="images/logo_label.png" alt="logo" style="height: 60; width: 100;"> ->
+				<h1 style="font-family: sans-serif;">ALYSSA LEO</h1>
+				<h1 style="font-family: 'Cedarville Cursive', cursive;">The logo could go here w/ high resolution</h1>
+		</div>
+	</div>
+
+-->
+
+<!-- TOP NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+	</button>
+	<a href="#1">Home</a>
+</nav>
+
+<div class="jumbotron-fluid text-center header-custom"> <!-- Change from jumbotron to "containter"/"container-fluid" for correct color -->
+	<img class="" src="images/logo_label.png" alt="logo" height="240" width="400">
+
+	<!-- Testing css fonts for the logo -->
+	<h1 style="font-family: sans-serif;">ALYSSA LEO</h1>
+	<h1 style="font-family: 'Cedarville Cursive', cursive;">This is the header</h1>
+</div>	
+
+
+	<div id="1" class="container-fluid"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/CO.png" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/CO.png" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/CO.png" alt="1">
+					</a>
+				</span>
+			</div>
+
+		</div>
+
+</body>
+
+
+
+    <script>
+function show() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+	<script>
+		function scrollWin() {
+			window.scrollBy(0, 500);
+		}
+	</script>
+  </body>
+</html>

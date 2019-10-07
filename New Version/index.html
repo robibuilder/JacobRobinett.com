@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<title>Alyssa Leo</title>
+
+	<!-- NAV BAR -->
+	<nav class="navbar navbar-fixed-top navbar-expand-xl justify-content-center"> <!-- sticky-top -->
+		<div class="nav-item active">
+			<a class="nav-link text-dark" href="#home">Home</a>
+		</div>
+
+		<div class="nav-item">
+			<a class="nav-link text-dark" href="#photography">Photography</a>
+		</div>
+
+	<!-- STATIC MIDDLE HEADER -->
+	<!--
+		<div class="nav-item">
+			<h1 class="font_playfair">ALYSSA LEO<br><span2 class="font_shopping">photography</span2></h1>
+		</div>
+
+	-->
+
+		<div class="navbar-brand">
+			<img href="#home" src="images/logo_label.png" alt="Alyssa Leo" height="100" width="150">
+		</div>
+
+		<div class="nav-item active">
+			<a class="nav-link text-dark" href="#videography">Videography</a>
+		</div>
+
+		<div class="nav-item active">
+			<a class="nav-link text-dark" href="info.html">About</a>
+		</div>
+	</nav>
+
+</head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- https://code.jquery.com/jquery-3.3.1.min.js -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+
+    <!-- borrowed code because my implementation was not compatible with ou create -->
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+
+	<script type="text/javascript">
+		$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+	</script>
+    
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	
+
+<div id="home" class="jumbotron-fluid container text-center header-custom" style="height: 100vh;"> <!-- Change from jumbotron to "containter"/"container-fluid" for correct color -->
+	
+	<!-- Testing css fonts for the logo 
+
+		<img class="" src="images/logo_label.png" alt="logo" height="240" width="400">
+		<h1 style="font-family: sans-serif;">ALYSSA LEO</h1>
+		<h1 style="font-family: 'Cedarville Cursive', cursive;">This is the header</h1>
+	-->
+</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<br>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 1 -->	
+	<div id="photography" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/GroupInteract.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/hci.PNG" alt="telsa">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/GroupInteract.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/hci.PNG" alt="telsa">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/GroupInteract.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/hci.PNG" alt="telsa">
+					</a>
+				</span>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ROW 2 -->
+
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/Tai_USE.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/Tai_USE.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/IMG_0426.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/IMG_0426.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/LoneCoyote.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/LoneCoyote.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+		</div>
+	</div>
+ 
+	<!-- ROW 3 -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/IMG_1070-3.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/IMG_1070-3.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/peacock.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/peacock.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CuriousCoyotes.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/CuriousCoyotes.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 4 -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/puddles.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/puddles.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/albinopeacock.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/albinopeacock.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/IMG_0449.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/IMG_0449.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 5 -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/IMG_0473.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/IMG_0473.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/LukeShadowUSE.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/LukeShadowUSE.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/pkitty.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/pkitty.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 6 -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/Swift Fox portrait-1.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/Swift Fox portrait-1.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/puddles bucket1.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/puddles bucket1.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/puddles1.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/puddles1.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 7 - PORTRAIT -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/LukeLickUSE.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/LukeLickUSE.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/LukePortraitUSE.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/LukePortraitUSE.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- VIDEOGRAPHY SECTION -->
+	<div id="videography" class="container"> <!--add "-fluid" to stretch grid page width -->		
+		<div class="row">
+			
+			<div class="col-lg-12"><br><br></div>
+
+			<div class="col-lg-6">
+				<h3>Escape Fire<br></h3>
+				<h5>September 5, 2018</h5>
+			</div>
+
+			<div class="col-lg-6">
+				<h3>late night flex by PAPA $MUG<br></h3>
+				<h5>September 5, 2018</h5>
+			</div>
+
+			<!-- Escape Fire -->
+			<div class="col-lg-6">
+				<div class="embed-responsive embed-responsive-16by9">
+	  				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qc1UvJaYaOk"></iframe>
+				</div>
+			</div>
+
+			<!-- late night flex by PAPA $MUG -->
+			<div class="col-lg-6">
+				<div class="embed-responsive embed-responsive-16by9">
+	  				<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/269393648?app_id=122963"></iframe>
+				</div>
+			</div>
+			 
+
+			<div class="col-lg-12"><br><br></div>
+
+			<div class="col-lg-6">
+				<h3>Break Free - Addidas Commercial<br></h3>
+				<h5>September 5, 2018</h5>
+			</div>
+
+			<div class="col-lg-6">
+				<h3>When Two Become One<br></h3>
+				<h5>September 5, 2018</h5>
+			</div>
+
+			<!-- Break Free - Addidas Commercial -->
+			<div class="col-lg-6">
+				<div class="embed-responsive embed-responsive-16by9">
+	  				<iframe class="embed-responsive-item" src="			https://player.vimeo.com/video/269392731"></iframe>
+				</div>
+			</div>
+
+			<!-- When Two Become One -->
+			<div class="col-lg-6">
+				<div class="embed-responsive embed-responsive-16by9">
+	  				<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/286803864"></iframe>
+				</div>
+			</div>
+			 			
+			<div class="col-lg-12"><br><br></div>
+				
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<span>Copyright © Alyssa Leo</span>
+					<span> // </span>
+					Site by <a style="color: white" href="http://jacobrobinett.com/"target="_blank">Jacob Robinett</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+
+
+    <script>
+function show() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+	<script>
+		function scrollWin() {
+			window.scrollBy(0, 500);
+		}
+	</script>
+  </body>
+</html>

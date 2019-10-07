@@ -1,0 +1,141 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Varela+Round');
+
+@font-face {
+	font-family: "Shopping Script";
+	src: url("css/fonts/ShoppingScriptDemo.ttf"),
+	url("css/fonts/shoppingscriptdemo-webfont.woff") format("woff"),	
+	url("css/fonts/ShoppingScriptDemo.otf") format("opentype"),
+	url("css/fonts/shoppingscriptdemo-webfont.svg#filename") format("svg");
+}
+
+body {
+	position: relative;
+	background-attachment: fixed;
+}
+
+.jumbotron-fluid{
+	display: block;
+	background-image: url("images/twobroschillinvibeCROPPED.jpg");
+	background-size: 100%;	
+}
+	
+span:hover{
+	/*transform: scale(.9, .9);*/
+	opacity: .8;
+}
+
+footer{
+	padding: 20px;
+	background-color: black;
+	color: white
+}
+
+.max-height{
+	height: 100vh;
+}
+
+.fixed{
+	z-index: 500;
+	position: fixed;
+	top: 0;
+}
+
+.scroll-button{
+	border-radius: 25px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one 🙂       */
+  display: flex;
+  align-items: center;
+}
+
+.top {
+	width: 100%;
+}
+
+.img-grid{
+	/* border: 1px solid #ddd; */
+	border-radius: 4px;
+	padding: px;		/* this is the spacing on the grid */
+	width: 100%;		/* height is stock 100% */
+} 
+
+.navbar{
+	/* background: rgb(200, 200, 200);
+	background: rgba(209, 209, 209, .5);
+	*/
+	background-color: transparent; /* OR transparent */
+	width: 100%;
+    text-align: center;
+    float: none;
+    /* display: inline-block; */
+}
+
+.nav-item{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 30px;
+}
+
+.font_playfair{
+	font-family: 'Playfair Display';
+	font-size: 30px;
+}
+	
+.font_shopping{
+	font-family: "Shopping Script";
+	font-size: 50px;
+}
+
+/* THIS CODE BLOCK HIDES / DISPLAYS THE LOGO ON SCROLL */ 
+.navbar-brand{
+	display: none;
+}
+
+.header-custom{
+	/* background-image: url("images/CO.png"); */
+	background-repeat: no-repeat;
+	/* background-size: 100% 100%; 
+	background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("images/twobroschillinvibe.jpg");
+	*/
+	width: 100%;
+	height: auto;
+	/* background-color: white; */
+}
+
+.img-header{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);	
+}
+
+.padding_bottom{
+	padding-bottom: 30px;
+}
+
+.logo_font{
+	font-size: 30px;
+}
+
+/*
+body{
+	background-color: red;
+}
+*/
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .navbar-brand{
+	display: block;
+	transition: display 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .font_playfair{
+	display: none;
+}
+
