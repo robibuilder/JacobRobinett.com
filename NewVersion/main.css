@@ -10,6 +10,72 @@
 	url("css/fonts/shoppingscriptdemo-webfont.svg#filename") format("svg");
 }
 
+body { 
+    /*background: url("Images/Drone_Edit_2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background-color: #000000;
+    background-size: 20% 100%;
+    }
+
+.spacing1 {
+	background-color: black;
+    background-size: 20% 100%;
+}	
+
+
+
+.temp-padding{
+    padding-top: 50px;
+}
+
+.i{
+    padding-right: 5px;
+    color: #4dd2ff;
+}
+
+.topBody{
+    padding: 250px;
+}
+
+.border-custom{
+    border-color: #4dd2ff !important;
+    /* color: #4dd2ff !important; */
+    border-width: 5px !important;
+} 
+
+.footer {
+  /* position: absolute; */ /* THIS LINE FUCKS WITH THE FOOTER */
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background: #000000;
+ border-top: 3px solid #000000;   
+}
+
+/* ----- FONTS ----- */
+
+h1 {
+    font-size: 72px;
+    color: #4dd2ff !important
+}
+
+h2 {
+    font-size: 72px;
+    color: white;
+}
+
+h3 {
+    color: ;
+}
+
+.text1 {
+    color: white;
+}
+
 body {
 	position: relative;
 	background-attachment: fixed;
