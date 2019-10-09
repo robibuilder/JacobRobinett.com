@@ -5,24 +5,27 @@
     background-size: 20% 100%;
 }	
 
-.temp-padding{
-    padding-top: 50px;
-}
-
 .i{
     padding-right: 5px;
     color: #4dd2ff;
 }
 
+.padding-top35{
+    padding-top: 34vh;
+    padding-bottom: 34vh;
+}
+
 .topBody{
-    padding: 250px;
+    padding-top: 250px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 .border-custom{
     border-color: #4dd2ff !important;
     /* color: #4dd2ff s!important; */
     border-width: 5px !important;
-} 
+}
 
 .footer {
   /* position: absolute; */ /* THIS LINE FUCKS WITH THE FOOTER */
@@ -47,7 +50,8 @@ h2 {
 }
 
 h3 {
-    color: ;
+    font-size: 36px;
+    color: #4dd2ff !important
 }
 
 .text1 {
@@ -72,12 +76,6 @@ body {
     position: relative;
     background-attachment: fixed;
     background-color: black;
-}
-
-.jumbotron-fluid{
-    display: block;
-    background-image: url("images/twobroschillinvibeCROPPED.jpg");
-    background-size: 100%;  
 }
     
 span:hover{
@@ -112,9 +110,6 @@ footer{
   align-items: center;
 }
 
-.top {
-    width: 100%;
-}
 
 .img-grid{
     /* border: 1px solid #ddd; */
