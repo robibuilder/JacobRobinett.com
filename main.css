@@ -1,5 +1,7 @@
 
-
+.jumbotron{
+    height: 100vh;
+}
 .spacing1 {
 	background-color: black;
     background-size: 20% 100%;
@@ -21,6 +23,14 @@
     padding-right: 250px;
 }
 
+.midBody{
+    padding: 250px;
+}
+
+.experience_padding{
+    padding-bottom: 30px;
+}
+
 .border-custom{
     border-color: #4dd2ff !important;
     /* color: #4dd2ff s!important; */
@@ -40,8 +50,8 @@
 /* ----- FONTS ----- */
 
 h1 {
-    font-size: 72px;
-    color: #4dd2ff !important
+    font-size: 100px;
+    color: #007bff !important
 }
 
 h2 {
@@ -50,8 +60,18 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
-    color: #4dd2ff !important
+    font-size: 18px;
+    color: #007bff !important
+}
+
+p-1 {
+    color: white;
+
+}
+
+.console{
+    font-size: 14px;
+     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
 }
 
 .text1 {
