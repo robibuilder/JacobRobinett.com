@@ -1,0 +1,63 @@
+/* ----- CUSTOM FONTS ----- */
+.console
+{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+/* ----- FONTS ----- */
+
+h1 {
+    font-size: 72px;
+    color: black !important
+}
+
+h2 {
+	font-size: 20px; 
+    color: black;
+}
+
+h3 {
+    color: #4dd2ff !important
+}
+
+.text1 {
+    color: white;
+}
+
+.text_centered{
+	text-align: center;
+}
+
+body {
+	position: relative;
+	background-attachment: fixed;
+}
+	
+/* ----- GRID ----- */
+span:hover{
+	/*transform: scale(.9, .9);*/
+	opacity: .8;
+}
+
+.max-height{
+	height: 100vh;
+}
+
+.img-grid{
+	/* border: 1px solid #ddd; */
+	border-radius: 4px;
+	padding: px;		/* this is the spacing on the grid */
+	width: 100%;		/* height is stock 100% */
+} 
+
+.font_playfair{
+	font-family: 'Playfair Display';
+	font-size: 30px;
+}
+
+.padding_bottom{
+	padding-bottom: 30px;
+}
+
+
+
