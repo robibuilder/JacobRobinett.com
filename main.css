@@ -1,6 +1,6 @@
 
 .jumbotron{
-    
+    height: 100vh;
 }
 
 .small_window{
@@ -9,12 +9,20 @@
 }
 
 .medium_window{
-        background-color: white;
+    height: 50vh;
+    background-color: black;
+}
 
+.m_margin{
+    margin-top: 10vh;
+}
+
+.c_height{
+    height: 50vh;
 }
 
 .large_window{
-        background-color: blue;
+        background-color: red;
 
 }
 .spacing1 {
