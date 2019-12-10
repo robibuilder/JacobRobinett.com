@@ -4,15 +4,18 @@
 }
 
 .small_window{
+    background-color: green;
 
 }
 
 .medium_window{
+        background-color: white;
 
 }
 
 .large_window{
-    height: 100vh;
+        background-color: blue;
+
 }
 .spacing1 {
 	background-color: black;
