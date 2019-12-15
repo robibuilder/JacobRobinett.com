@@ -96,6 +96,11 @@ h3 {
     color: #007bff !important
 }
 
+h4{
+    font-size: 18px;
+    color: white;
+}
+
 p-1 {
     color: white;
 
@@ -130,4 +135,6 @@ p-1 {
 
 /* ----- WIPS ----- */
 
-
+.height_38{
+    height: 38vh;
+}
