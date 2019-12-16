@@ -96,6 +96,11 @@ h3 {
     color: #007bff !important
 }
 
+h4{
+    font-size: 18px;
+    color: white;
+}
+
 p-1 {
     color: white;
 
@@ -104,6 +109,10 @@ p-1 {
 .console{
     font-size: 14px;
      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+.App{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .text1 {
@@ -130,4 +139,6 @@ p-1 {
 
 /* ----- WIPS ----- */
 
-
+.height_38{
+    height: 38vh;
+}
