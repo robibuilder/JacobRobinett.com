@@ -73,7 +73,6 @@ body {
 .footer {
   /* position: absolute; */ /* THIS LINE MESSES WITH THE FOOTER */
   bottom: 0;
-  position: ;
   /* Set the fixed height/width of the footer here */
   width: 100%;
   background-color: black;
