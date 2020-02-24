@@ -145,3 +145,12 @@ p-1 {
 .height_30{
     height: 35vh;
 }
+
+/* MIDDLE */
+.middle {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
