@@ -3,7 +3,7 @@
   JacobRobinett.com - v1
 </h1>
 <p align="center">
-  The first official iteration of <a href="https://brittanychiang.com" target="_blank">JacobRobinett.com</a> built with BootStrap.
+  Second version of <a href="http://jacobrobinett.com" target="_blank">JacobRobinett.com</a> built with BootStrap.
 </p>
 
 <p align="center">
@@ -26,4 +26,4 @@
   </a>
 </p>
 
-![Jacob Robinett](Images/home.png) 
+![Jacob Robinett](Images/Mobile.jpeg) 
