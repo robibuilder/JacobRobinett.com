@@ -6,9 +6,10 @@ body {
 }
 
 .jumbotron{
-    background-color: red;
     height: 100vh;
 }
+
+/* ----- MOBILE SCREEN FORMATTING ----- */
 
 @media screen and (min-width: 300px) {
     .jumbotron {
@@ -16,9 +17,47 @@ body {
         height: 50vh;
     }
     .top_margin {
-        margin-top: 15vh;
+        margin-top: 5vh;
+    }
+
+    /* ----- FONT SIZING ----- */
+
+    .console {
+    font-size: 18px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    }
+
+    h1 {
+        font-size: 200px;
+        color: #007bff !important
+    }
+
+    h2 { /* second white line in top jumbotron */
+        font-size: 75px;
+        color: white;
+    }
+
+    h3 { /* bleu left section titles */
+        font-size: 60px;
+        color: #007bff !important /* blue */
+    }
+
+    h4{ /* depricated in feature project section */
+        font-size: 18px;
+        color: white;
+    }
+
+    p-1 { /* all other text */
+        font-size: 25px;
+        color: white;
+    }
+
+    p-2 {
+        font-size: 25px;
     }
 }
+
+/* ----- LARGE SCREEN FORMATTING ----- */
 
 @media screen and (min-width: 1000px) {
     .jumbotron {
@@ -27,6 +66,38 @@ body {
     }
     .top_margin {
         margin-top: 25vh;
+    }
+
+    /* ----- FONT SIZING ----- */
+
+    .console {
+    font-size: 14px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    }
+
+    h1 {
+        font-size: 100px;
+        color: #007bff !important
+    }
+
+    h2 {
+        font-size: 72px;
+        color: white;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #007bff !important
+    }
+
+    h4{
+        font-size: 18px;
+        color: white;
+    }
+
+    p-1 { /* all other text */
+        font-size: 18px;
+        color: white;
     }
 }
 
@@ -100,36 +171,6 @@ body {
 }
 
 /* ----- FONTS ----- */
-
-h1 {
-    font-size: 100px;
-    color: #007bff !important
-}
-
-h2 {
-    font-size: 72px;
-    color: white;
-}
-
-h3 {
-    font-size: 18px;
-    color: #007bff !important
-}
-
-h4{
-    font-size: 18px;
-    color: white;
-}
-
-p-1 {
-    color: white;
-
-}
-
-.console{
-    font-size: 14px;
-     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-}
 
 .App{
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
