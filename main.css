@@ -6,7 +6,28 @@ body {
 }
 
 .jumbotron{
+    background-color: red;
     height: 100vh;
+}
+
+@media screen and (min-width: 300px) {
+    .jumbotron {
+        background-color: black;
+        height: 50vh;
+    }
+    .top_margin {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .jumbotron {
+        background-color: black;
+        height: 100vh;
+    }
+    .top_margin {
+        margin-top: 25vh;
+    }
 }
 
 /* ----- WINDOW SIZING TESTS ----- */
@@ -145,6 +166,8 @@ p-1 {
 .height_30{
     height: 35vh;
 }
+
+
 
 /* MIDDLE */
 .middle {
