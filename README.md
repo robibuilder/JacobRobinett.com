@@ -3,7 +3,7 @@
   JacobRobinett.com
 </h1>
 <p align="center">
-  Second version of <a href="http://jacobrobinett.com" target="_blank">JacobRobinett.com</a> built with BootStrap.
+  Second version of <a href="http://jacobrobinett.com" target="_blank">JacobRobinett.com</a> - A web based resume built with BootStrap.
 </p>
 
 <p align="center">
