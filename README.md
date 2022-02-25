@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  JacobRobinett.com - v1
+  JacobRobinett.com
 </h1>
 <p align="center">
   Second version of <a href="http://jacobrobinett.com" target="_blank">JacobRobinett.com</a> built with BootStrap.
