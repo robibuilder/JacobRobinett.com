@@ -1,0 +1,86 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Varela+Round');
+
+@font-face {
+	font-family: "Shopping Script";
+	src: url("css/fonts/ShoppingScriptDemo.ttf"),
+	url("css/fonts/shoppingscriptdemo-webfont.woff") format("woff"),	
+	url("css/fonts/ShoppingScriptDemo.otf") format("opentype"),
+	url("css/fonts/shoppingscriptdemo-webfont.svg#filename") format("svg");
+}
+
+.jumbotron{
+	height: 50vh;
+}
+
+/* HOVER */
+
+span:hover{
+	/*transform: scale(.9, .9);*/
+	opacity: .8;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one 🙂       */
+  display: flex;
+  align-items: center;
+}
+
+.background{
+	background-image: url("images/biz_one.jpg");
+	background-size: cover;
+}
+
+/* IMAGES */
+
+.img-grid{
+	/* border: 1px solid #ddd; */
+	border-radius: 0px;
+	/* padding: 0px;		/* this is the spacing on the grid */
+	width: 100%;		/* height is stock 100% */
+	margin-bottom: 25px;
+} 
+
+/* FONTS */
+
+.font_playfair{
+	font-family: 'Playfair Display';
+	font-size: 30px;
+}
+	
+.font_shopping{
+	font-family: "Shopping Script";
+	font-size: 50px;
+}
+
+.console{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+.App{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+/* MIDDLE */
+.middle {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+
+/* FOOTER */
+
+footer{
+	padding: 20px;
+	background-color: black;
+	color: white
+}
+
+.padding_bottom{
+	padding-bottom: 30px;
+}
