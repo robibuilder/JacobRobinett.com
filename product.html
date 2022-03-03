@@ -33,12 +33,46 @@
 
 <!-- START OF EDUCATION SECTION -->
 
-
     <div class="container">
         <div class="row">
-            <p id="demo">xx</p>
+            <p>This is a&nbsp;</p>
+            <p id="brand"></p>
+            <p>&nbsp;</p>
+            <p id="type"></p>
+            <p id="link"></p>
         </div>
     </div>
+
+
+    <script>
+        const person = [
+        {
+          brand: "Hart",
+          type: "Battery",
+          name: "Hart 20 V Battery Holder Mount & Dock",
+          price: "$4.99",
+          link: "https://www.ebay.com/itm/383881200540",
+          description: "Mount/Dock for Hart 20v batteries Product Details: <br>- Securely holds your battery to the mounted surface.   - Press release tabs on battery to lock into position <br>- Works without locking tab to easily slide into mount"
+        },
+        {
+          brand: "Hart",
+          type: "Battery",
+          name: "Hart 20 V Battery Holder Mount & Dock",
+          price: "$4.99",
+          link: "https://www.ebay.com/itm/383881200540",
+          description: "Mount/Dock for Hart 20v batteries Product Details: <br>- Securely holds your battery to the mounted surface.   - Press release tabs on battery to lock into position <br>- Works without locking tab to easily slide into mount"
+        }
+        ];
+
+        let x = 0
+        const myUrl = new URL(window.location.href);
+        x = myUrl.searchParams.get("id");
+
+        document.getElementById("brand").innerHTML = person[x].brand;
+        document.getElementById("type").innerHTML = person[x].type;
+        document.getElementById("link").innerHTML = person[x].link;
+    </script>
+
 <!-- ======================================================================================= -->
 
 <!-- START OF EDUCATION SECTION -->
@@ -53,6 +87,7 @@
             </div>
         </div>
     </div>
+
 
 <!-- ====================================================================================== -->
 
