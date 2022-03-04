@@ -17,15 +17,17 @@
 
 <!-- ====================================================================================== -->
 
-    <div class="jumbotron" style="">
-        <div class="row top_margin" style="">
-            <div class="col-lg-1 col-sm-0"></div>
-            <div class="col-lg-9 col-sm-12 rounded"><!-- insert "border"-->
-
-                <h1>Robinhood Designs</h1>
-
-                <h2>Custom Designs. Custom Prints.</h2>
-
+    <div class="container" style="height: 10vh;">
+        <div class="row" style="margin-top: 5vh; text-align: center;">
+            <div class="col-lg-2">
+                <a href="store.html">
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="col-lg-8 col-sm-12"><!-- insert "border"-->
+                <h5>Robinhood Designs</h5>
+            </div>
+            <div class="col-lg-2">
             </div>
         </div>
     </div>
@@ -35,11 +37,18 @@
 
     <div class="container">
         <div class="row">
-            <p>This is a&nbsp;</p>
-            <p id="brand"></p>
-            <p>&nbsp;</p>
-            <p id="type"></p>
-            <p id="link"></p>
+            <div class="col-lg-6" style="height: 30vh;">
+                <p id="image"></p>
+            </div>
+            <div class="col-lg-6" style="text-align: center;">
+                <h3 id="title"></h3>
+                <p id="price"></p>
+                <p id="description"></p>
+                <p class="" id="link" style="color: white;"></p>
+            </div>
+        </div>
+        <div class="col-sm-12">
+           
         </div>
     </div>
 
@@ -49,18 +58,20 @@
         {
           brand: "Hart",
           type: "Battery",
-          name: "Hart 20 V Battery Holder Mount & Dock",
+          image: "images/one.png",
+          title: "Hart 20V Battery Holder Mount & Dock",
           price: "$4.99",
           link: "https://www.ebay.com/itm/383881200540",
-          description: "Mount/Dock for Hart 20v batteries Product Details: <br>- Securely holds your battery to the mounted surface.   - Press release tabs on battery to lock into position <br>- Works without locking tab to easily slide into mount"
+          description: "Keep you Hart batteries organized and your work space cluttered."
         },
         {
-          brand: "Hart",
+          brand: "Craftsman",
           type: "Battery",
-          name: "Hart 20 V Battery Holder Mount & Dock",
+          image: "images/one.png",
+          title: "Craftsman 20V Battery Holder Mount & Dock",
           price: "$4.99",
-          link: "https://www.ebay.com/itm/383881200540",
-          description: "Mount/Dock for Hart 20v batteries Product Details: <br>- Securely holds your battery to the mounted surface.   - Press release tabs on battery to lock into position <br>- Works without locking tab to easily slide into mount"
+          link: "https://www.ebay.com/itm/384421539579",
+          description: "Mount/Dock for Craftsman 20v Batteries<br>FREE SHIPPING:<br>Free shipping when you buy 2 or more Battery Mounts!<br>Product Details:<br>- Securely holds your battery to the mounted surface.<br>  - Press release tabs on battery to lock into position<br>- Works without locking tab to easily slide into mount<br>Mount to walls & under work stations to remove clutter off your work station.  Slide battery into holder to securely lock into position.  Press tabs on battery to release.<br>Product Dimensions:<br>- 2.33\"W x 2.5\"H x .66\"D<br>**BATTERY NOT INCLUDED**<br>"
         }
         ];
 
@@ -68,9 +79,21 @@
         const myUrl = new URL(window.location.href);
         x = myUrl.searchParams.get("id");
 
-        document.getElementById("brand").innerHTML = person[x].brand;
-        document.getElementById("type").innerHTML = person[x].type;
-        document.getElementById("link").innerHTML = person[x].link;
+        // Build link
+        //let purchaseLink = "<a href='" + x.link + "''>" + "Purchase</a>";
+        let text = "Purchase";
+        let purchaseLink = text.link(person[x].link);
+
+        let imagePath = "<img class='img-grid' src='" + person[x].image + "' alt='telsa'>"
+
+        //document.getElementById("brand").innerHTML = person[x].brand;
+        //document.getElementById("type").innerHTML = person[x].type;
+        document.getElementById("title").innerHTML = person[x].title;
+        document.getElementById("price").innerHTML = person[x].price;
+        document.getElementById("link").innerHTML = purchaseLink;
+        document.getElementById("description").innerHTML = person[x].description;
+        document.getElementById("image").innerHTML = imagePath;
+
     </script>
 
 <!-- ======================================================================================= -->
@@ -104,15 +127,15 @@
 
   <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8"></div>
-                <div class="col-lg-1">
-                        <a href="https://www.facebook.com/jacob.robinett.58"><i class="fa fa-facebook-square i"></i></a>
+            <div class="row" style="text-align: right;">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                        <a href="https://www.facebook.com/jacob.robinett.58" style=""><i class="fa fa-facebook-square i"></i></a>
                         <a href="https://www.instagram.com/jacob_robinett/"><i class="fa fa-instagram i" href="instagram.com"></i></a>
                         <a href="https://github.com/robibuilder"><i class="fa fa-github i"></i></a>
                 </div>
-                <div class="col-lg-3">
-                    <span class="text-muted i"> Copyright © Jacob Robinett</span>
+                <div class="col-lg-4">
+                    <span class="text-muted i"> Copyright © Robinhood Designs LLC.</span>
                 </div>
                 <div class="col-lg-1">
                 </div>
