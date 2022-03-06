@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="js/jquery.js"></script>
-    <script src="js/require.js"></script>
-
-    <script type="text/javascript" src="example.json"></script>
 
   </head>
   <body>
@@ -56,6 +53,8 @@
             </div>
             <div class="col-lg-6" style="text-align: center;">
                 <p id="abc"></p>
+                <p id="log"></p>
+                <p id="log2"></p>
                 <button>Click me to hide p's</button>
             </div>
         </div>
@@ -87,13 +86,55 @@
         //var mydata = JSON.parse(product);
         //const word = data.name;
 
+
+        (function () {
+            if (!console) {
+                console = {};
+            }
+            var old = console.log;
+            var logger = document.getElementById('log');
+            console.log = function (message) {
+                if (typeof message == 'object') {
+                    logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '<br />';
+                } else {
+                    logger.innerHTML += message + '<br />';
+                }
+            }
+        })();
+
+        console.log("hi");
+
+        // $(document).ready(function(){
+        //     $("#log2").load("test.js");
+        // });
+
+        var jqxhr = $.getJSON( "data.txt", function() {
+          console.log( "success" );
+        })
+          .done(function() {
+            console.log( "second success" );
+          })
+          .fail(function() {
+            console.log( "oops nope" );
+          })
+          .always(function() {
+            console.log( "complete" );
+          });
+         
+        // Perform other work here ...
+         
+        // Set another completion function for the request above
+        jqxhr.always(function() {
+          console.log( "second complete" );
+        });
+
         $("button").click(function() {
             $("p").hide();
         });
 
-        const txt = '{"id":"0", "title":"Hart", "price":"4.99"}'
+        const txt = '[{"id":"0", "title":"Hart", "price":"4.99"},{"id":"0", "title":"combo", "price":"10.99"}]'
         const obj = JSON.parse(txt);
-        document.getElementById("abc").innerHTML = obj.title + " - " + obj.price ;
+        document.getElementById("abc").innerHTML = obj[1].title + " - " + obj[1].price ;
 
         let x = 0
         const myUrl = new URL(window.location.href);
