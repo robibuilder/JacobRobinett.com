@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  app:
+    build: 
+      context: ./
+      dockerfile: Dockerfile.local
+    ports:
+      - 3000:3000
+      - 9229:9229
+    restart: always
+    volumes: 
+      - ./:/home/node/app
+    environment:
+      DB_HOST: localhost
+      DB_USERNAME: root
+      DB_PASSWORD: secret
+      DB_PORT: 3306
+  mysql:
+    image: mysql
+    ports:
+      - 5640:3306
+    volumes: 
+      - store-mysql-data:/var/lib/mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: test
+
+volumes:
+  store-mysql-data:
