@@ -13,3 +13,10 @@
     <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="72" height="72">
   </a>
 </p>
+
+
+> node index.js // runs index.html on port 8000
+// add line to each endpoint to connect port 3000 to 8000
+// index.html is displaying database > api > front end
+// need to figure out how to deploy the api onto a server maybe netify??
+// need to figure out how to deploy product page to port 8000

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head><meta name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="store.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery.js"></script>
+
+    <!-- <script src="app.js"></script> -->
+
+  </head>
+  <body>
+
+
+<!-- ======================================================================================= -->
+
+<!-- START OF EDUCATION SECTION -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" style="text-align: center;">
+                <p id="abc">hello</p>
+                <p id="log"></p>
+                <p id="log2"></p>
+                <button onclick="testfunction()">Click me to hide p's</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function testfunction() {
+            alert("hello");
+            console.log("help");
+        }
+        console.log("nope");
+
+        fetch("http://localhost:3000/bong")
+        .then(response => response.json())
+        .then(data => { 
+            console.log("FETCH");
+            // do something with the data the API has returned
+        })
+    </script>
+
+<!-- ======================================================================================= -->
+
+
+
+
+<!-- ====================================================================================== -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/dynamic_css.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+
+
+</html>
