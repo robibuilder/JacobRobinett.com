@@ -1,13 +1,9 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const http = require('http')
+const fs = require('fs')
 
-app.use(express.static(path.join(__dirname)));
-app.use("/images", express.static(__dirname + '/images'));
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'content-type': 'text/html' })
+  fs.createReadStream('product_json.html').pipe(res)
+})
 
-// viewed at based directory http://localhost:8080/
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname + 'apitest.html'));
-});
-
-app.listen(process.env.PORT || 8000);
+server.listen(process.env.PORT || 8000) 

@@ -20,3 +20,7 @@
 // index.html is displaying database > api > front end
 // need to figure out how to deploy the api onto a server maybe netify??
 // need to figure out how to deploy product page to port 8000
+
+https://www.youtube.com/watch?v=hQAu0YEIF0g&ab_channel=OwenConti
+
+https://www.seancdavis.com/posts/deploy-static-api-netlify/

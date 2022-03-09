@@ -44,121 +44,54 @@
 
 <!-- START OF EDUCATION SECTION -->
 
-    <script>
-
-    </script>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6" style="height: 30vh;">
-                <p id="image"></p>
-            </div>
-            <div class="col-lg-6" style="text-align: center;">
-                <p id="abc">hello</p>
-                <p id="log"></p>
-                <p id="log2"></p>
-                <button>Click me to hide p's</button>
-                <a href="localhost:3000/bong"><p>click me</p></a>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12" style="height: 30vh;">
-            </div>
+<div class="container" style="background-color: white;">
+    <div class="row">
+        <div class="col-lg-6" style="text-align: center;">
+            <p id="abc"></p>
+            <p id="log"></p>
+            <p id="log2"></p>
+            <button onclick="testfunction()">Click me to hide p's</button>
         </div>
     </div>
 
+</div>
 
-    <script>
-        //const data = require('./example.json');
-        //const obj = JSON.parse(data);
+<script>
+    function testfunction() {
+        alert("hello");
+        console.log("help");
+    }
+    console.log("nope");
 
-        // var readJson = (path, cb) => {
-        //   fs.readFile(require.resolve(path), (err, data) => {
-        //     if (err)
-        //       cb(err)
-        //     else
-        //       cb(null, JSON.parse(data))
-        //   })
-        // }
+    const abc = document.getElementById("abc");
 
+    fetch("http://localhost:3000/battery/1")
+    .then(response => response.json())
+    .then(data => { 
 
-        //var mydata = JSON.parse(product);
-        //const word = data.name;
+        // const productContainer = createProductContainer;
 
-
-        (function () {
-            if (!console) {
-                console = {};
-            }
-            var old = console.log;
-            var logger = document.getElementById('log');
-            console.log = function (message) {
-                if (typeof message == 'object') {
-                    logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '<br />';
-                } else {
-                    logger.innerHTML += message + '<br />';
-                }
-            }
-        })();
-
-        console.log("hi");
-
-        // $(document).ready(function(){
-        //     $("#log2").load("test.js");
-        // });
-
-        var jqxhr = $.getJSON( "data.txt", function() {
-          console.log( "success" );
+        const product = data.map(product => {
+            document.getElementById("abc").innerHTML = product.title;
         })
-          .done(function() {
-            console.log( "second success" );
-          })
-          .fail(function() {
-            console.log( "oops nope" );
-          })
-          .always(function() {
-            console.log( "complete" );
-          });
-         
-        // Perform other work here ...
-         
-        // Set another completion function for the request above
-        jqxhr.always(function() {
-          console.log( "second complete" );
-        });
 
-        $("button").click(function() {
-            $("p").hide();
-        });
+        // productContainer.appendChild(product);
+        // abc.appendChild(productContainer);
+    })
 
-        // const txt = '[{"id":"0", "title":"Hart", "price":"4.99"},{"id":"0", "title":"combo", "price":"10.99"}]'
-        // const obj = JSON.parse(txt);
-        // document.getElementById("abc").innerHTML = obj[1].title + " - " + obj[1].price ;
+    // createProductContainer = () => {
+    //     const container = document.createElement("div");
+    //     return container;
+    // }
 
-        let x = 0
-        const myUrl = new URL(window.location.href);
-        x = myUrl.searchParams.get("id");
+    // createProduct = () => {
+    //     const product = document.createElement("div");
+    //     const p = document.createElement("p");
+    //     p.textContent = product.title;
 
-        // Build link
-        //let purchaseLink = "<a href='" + x.link + "''>" + "Purchase</a>";
-        let text = "Purchase";
-        let purchaseLink = text.link(person[x].link);
-
-        let imagePath = "<img class='img-grid' src='" + person[x].image + "' alt='telsa'>"
-
-        //document.getElementById("brand").innerHTML = person[x].brand;
-        //document.getElementById("type").innerHTML = person[x].type;
-        document.getElementById("title").innerHTML = person[x].title;
-        document.getElementById("price").innerHTML = person[x].price;
-        document.getElementById("link").innerHTML = purchaseLink;
-        document.getElementById("description").innerHTML = person[x].description;
-        document.getElementById("image").innerHTML = imagePath;
-
-    </script>
+    //     return product;
+    // }
+</script>
 
 <!-- ======================================================================================= -->
 

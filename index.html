@@ -17,55 +17,6 @@
 
 <!-- ====================================================================================== -->
 
-<div class="container" style="background-color: white;">
-    <div class="row">
-        <div class="col-lg-6" style="text-align: center;">
-            <p id="abc">abc hello</p>
-            <p id="log"></p>
-            <p id="log2"></p>
-            <button onclick="testfunction()">Click me to hide p's</button>
-        </div>
-    </div>
-
-</div>
-
-<script>
-    function testfunction() {
-        alert("hello");
-        console.log("help");
-    }
-    console.log("nope");
-
-    const abc = document.getElementById("abc");
-
-    fetch("http://localhost:3000/battery/1")
-    .then(response => response.json())
-    .then(data => { 
-
-        // const productContainer = createProductContainer;
-
-        const product = data.map(product => {
-            document.getElementById("abc").innerHTML = product.title;
-        })
-
-        // productContainer.appendChild(product);
-        // abc.appendChild(productContainer);
-    })
-
-    // createProductContainer = () => {
-    //     const container = document.createElement("div");
-    //     return container;
-    // }
-
-    // createProduct = () => {
-    //     const product = document.createElement("div");
-    //     const p = document.createElement("p");
-    //     p.textContent = product.title;
-
-    //     return product;
-    // }
-</script>
-
     <div class="jumbotron" style="">
         <div class="row top_margin" style="">
             <div class="col-lg-1 col-sm-0"></div>
