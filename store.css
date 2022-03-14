@@ -128,8 +128,9 @@ a:link, a:visited {
 }
 */
 
-a:hover, a:active {
-  
+a:hover, a:active ,a:link, a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 #link{
