@@ -1,60 +1,13 @@
 <!doctype html>
 <html lang="en">
-  <head><meta name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-    <link rel="stylesheet" href="store.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="js/jquery.js"></script>
-
-    <script src="app.js"></script>
+  <head>
+      <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8">
 
   </head>
   <body>
 
-<!-- ====================================================================================== -->
-
-    <div class="container" style="height: 10vh;">
-        <div class="row" style="margin-top: 5vh; text-align: center;">
-            <div class="col-lg-1">
-                <a href="store.html">
-                    <p>Home</p>
-                </a>
-            </div>
-            <div class="col-lg-1">
-                <a href="shop.html">
-                    <p>Shop</p>
-                </a>
-            </div>
-            <div class="col-lg-8 col-sm-12"><!-- insert "border"-->
-                <h5>Robinhood Designs</h5>
-            </div>
-            <div class="col-lg-2">
-            </div>
-        </div>
-    </div>
-<!-- ======================================================================================= -->
-
-<!-- START OF EDUCATION SECTION -->
-
-<div class="container" style="background-color: white;">
-    <div class="row">
-        <div class="col-lg-6" style="text-align: center;">
-            <p id="abc"></p>
-            <p id="log"></p>
-            <p id="log2"></p>
-            <button onclick="testfunction()">Click me to hide p's</button>
-        </div>
-    </div>
-
-</div>
+    <p id="abc">xxx</p>
+    <button onclick="testfunction()">Click me to hide p's</button>
 
 <script>
     function testfunction() {
@@ -65,15 +18,16 @@
 
     const abc = document.getElementById("abc");
 
-    fetch("http://localhost:3000/battery/1")
+    fetch("https://priceless-kare-3dd76e.netlify.app/.netlify/functions/app/batteries/2")
     .then(response => response.json())
     .then(data => { 
 
         // const productContainer = createProductContainer;
 
-        const product = data.map(product => {
-            document.getElementById("abc").innerHTML = product.title;
-        })
+        // const product = data.map(product => {
+        //     document.getElementById("abc").innerHTML = product.brand;
+        // })
+        document.getElementById("abc").innerHTML = data.brand;
 
         // productContainer.appendChild(product);
         // abc.appendChild(productContainer);
@@ -93,52 +47,12 @@
     // }
 </script>
 
-<!-- ======================================================================================= -->
-
-<!-- START OF EDUCATION SECTION -->
-
-    <div class="container">
-        <row class="row">
-        </div> <!-- row -->
-
-
-        <div class="row">
-            <div class="col-lg-12" style="height: 10vh;">
-            </div>
-        </div>
-    </div>
-
-
 <!-- ====================================================================================== -->
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/dynamic_css.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
-
-<!-- BEGIN WITH FOOTER -->
-
-  <footer class="footer">
-        <div class="container">
-            <div class="row" style="text-align: right;">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4">
-                        <a href="https://www.facebook.com/jacob.robinett.58" style=""><i class="fa fa-facebook-square i"></i></a>
-                        <a href="https://www.instagram.com/jacob_robinett/"><i class="fa fa-instagram i" href="instagram.com"></i></a>
-                        <a href="https://github.com/robibuilder"><i class="fa fa-github i"></i></a>
-                </div>
-                <div class="col-lg-4">
-                    <span class="text-muted i"> Copyright © Robinhood Designs LLC.</span>
-                </div>
-                <div class="col-lg-1">
-                </div>
-            </div>
-        </div>
-</footer>
-
 
 </html>

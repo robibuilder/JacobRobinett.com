@@ -24,3 +24,5 @@
 https://www.youtube.com/watch?v=hQAu0YEIF0g&ab_channel=OwenConti
 
 https://www.seancdavis.com/posts/deploy-static-api-netlify/
+
+https://www.youtube.com/watch?v=ACI8EDbaXzo

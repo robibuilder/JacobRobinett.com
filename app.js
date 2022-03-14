@@ -4,13 +4,13 @@ var app = express();
 const port = 3000;
 
 var connection = mysql.createConnection({
-  host: "208.76.87.109",
-  user: "aogmapax_user",
-  password: "secret",
-  database: "aogmapax_products"
-  // host: "localhost",
-  // user: "root",
-  // password: "secret"
+  // host: "208.76.87.109",
+  // user: "aogmapax_user",
+  // password: "secret",
+  // database: "aogmapax_products"
+  host: "localhost",
+  user: "root",
+  password: "password"
 });
 
 connection.connect((err) => {
